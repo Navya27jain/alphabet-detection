@@ -9,7 +9,7 @@ import base64
 
 app = Flask(__name__)
 
-model_dict = pickle.load(open('model/model.p', 'rb'))
+model_dict = pickle.load(open('./model.p', 'rb'))
 model = model_dict['model']
 
 mp_hands = mp.solutions.hands
